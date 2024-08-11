@@ -1,0 +1,2 @@
+export const fakeWait = ms => new Promise(resolve => setTimeout(resolve, ms));
+export const prettierDateTime = dateTime => dateTime && (new Date(dateTime)).toISOString().replace('T', ' ').slice(0, 19);
